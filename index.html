@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Meals App</h1>
+        <div class="flex">
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search For Meal">
+                <button class="search-btn" type="submit">
+                    <i>
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </i>
+                </button>
+            </form>
+
+            <button class="random-btn" id="random">
+                <i><span class="material-symbols-outlined">
+                        shuffle
+                    </span></i>
+            </button>
+
+            <button class="fav-btn" id="fav">
+                <a href="#favourites">
+                    <i>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </i>
+                </a>
+            </button>
+
+
+
+        </div>
+
+        <div class="result-heading"></div>
+        <div class="meals" id="meals"></div>
+        <div id="single-meal"></div>
+
+    </div>
+
+    <section id="favourites-list">
+        <h2>Favourites</h2>
+        <div id="favourites">
+            
+        </div>
+
+
+    </section>
+      
+
+
+
+    <!-- Java Script link -->
+    <script src="index.js"></script>
+</body>
+
+</html>
